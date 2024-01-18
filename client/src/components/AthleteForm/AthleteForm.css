@@ -1,0 +1,33 @@
+.AthleteForm {
+    margin: 20px 0;
+    border: 1px solid gray;
+    padding: 0 20px 20px 20px;
+}
+.AthleteForm .field{
+   margin-bottom: 10px;
+}
+.AthleteForm .field .text_field{
+   margin-top: 20px;
+}
+.AthleteForm .field #outlined-basic{
+  height: 0px;
+}
+.AthleteForm .field input{
+   outline: none;
+}
+.AthleteForm input, .AthleteForm textarea, .AthleteForm button{
+   width: 100%;
+   margin-bottom: 10px;
+}
+.AthleteForm .submit_btn.active{
+  background-color: green;
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+}
+.AthleteForm .submit_btn{
+   background-color: red;
+   color: white;
+   opacity: 0.5;
+   cursor: not-allowed;
+}

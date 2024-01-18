@@ -1,0 +1,25 @@
+.AthleteList {
+    margin: 20px 0;
+    border: 1px solid gray;
+    padding: 0 20px;
+}
+
+.AthleteList  .one_athlete{
+ display: flex;
+ gap: 20px;
+ align-items: center;
+ margin-bottom: 10px;
+}
+.AthleteList  .one_athlete .athlete_name::first-letter{
+text-transform: uppercase;
+}
+.AthleteList  .one_athlete .athlete_name{
+text-transform: lowercase;
+}
+
+.AthleteList  .one_athlete a:nth-child(1){
+  flex: 1;
+}
+.AthleteList  .one_athlete a:nth-child(2), .AthleteList  .one_athlete a:nth-child(3){
+  flex: 0.1;
+}

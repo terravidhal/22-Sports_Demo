@@ -1,0 +1,21 @@
+.DetailsView {
+    width: 19%;
+    margin: 40px auto;
+    border-radius: 5px;
+}
+.DetailsView .fields{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.DetailsView span.infos{
+   font-weight: bold;
+}
+.DetailsView .fields p span.infos_field::first-letter{
+   text-transform: uppercase;
+   color: red;
+}
+.DetailsView .btn-del{
+  margin-top: 10px;
+}
