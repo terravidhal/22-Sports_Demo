@@ -8,9 +8,14 @@
 }
 .AthleteForm .field .text_field{
    margin-top: 20px;
+   width: 100%;
 }
 .AthleteForm .field #outlined-basic{
   height: 0px;
+}
+.AthleteForm .field #outlined-basic-label{
+   font-size: 0.9rem;
+   top: -3px;
 }
 .AthleteForm .field input{
    outline: none;

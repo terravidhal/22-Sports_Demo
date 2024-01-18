@@ -100,7 +100,13 @@ const AthleteForm = (props) => {
            </div>
            <div className='field'>
                <label>lastName :</label><br/>
-               <TextField id="outlined-basic"  value={lastName} onChange = {(e)=>handleLastNameErrors(e)} className="text_field" label="Outlined" variant="outlined" />
+               <TextField id="outlined-basic"  value={lastName} onChange = {(e)=>handleLastNameErrors(e)} className="text_field" label="lastName" variant="outlined" />
+               <TextField
+                 error = {errors.lastName ? true : false}
+                  id="outlined-error-helper-text" 
+                  label="lastName"
+                  helperText={errors.lastName ?  errors.lastName.message : ""}
+                />
 
                {/* <input type="text" value={lastName} onChange = {(e)=>handleLastNameErrors(e)}/> */}
                { errors.lastName ? 
@@ -110,7 +116,7 @@ const AthleteForm = (props) => {
            </div>
            <div className='field'>
                <label>sport :</label><br/>
-               <TextField id="outlined-basic"  value={sport} onChange = {(e)=>setSport(e.target.value)} className="text_field" label="Outlined" variant="outlined" />
+               <TextField id="outlined-basic"  value={sport} onChange = {(e)=>setSport(e.target.value)} className="text_field" label="sport" variant="outlined" />
 
                {/* <input type="text" value={sport} onChange = {(e)=>setSport(e.target.value)}/> */}
                { errors.sport ? 
@@ -120,7 +126,7 @@ const AthleteForm = (props) => {
            </div>
            <div className='field'>
                <label>team :</label><br/>
-               <TextField id="outlined-basic"  value={team} onChange = {(e)=>setTeam(e.target.value)} className="text_field" label="Outlined" variant="outlined" />
+               <TextField id="outlined-basic"  value={team} onChange = {(e)=>setTeam(e.target.value)} className="text_field" label="team" variant="outlined" />
 
                {/* <input type="text" value={team} onChange = {(e)=>setTeam(e.target.value)}/> */}
                { errors.team ? 
